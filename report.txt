@@ -1,0 +1,48 @@
+# Chessboard Diagram Assignment Report
+
+[Replace the square-bracketed text with your own text. *Leave everything else unchanged.* 
+Note, the reports are parsed to check word limits, etc. Changing the format may cause 
+the parsing to fail.]
+
+## Feature Extraction (Max 200 Words)
+
+To extract the most useful features I:
+1, Had all the feature vectors extracted from the images.
+1, Calcuateted the eigenvectors to be used in my pca system.
+3, Stored the value in the model to be used in the reduction function.
+4, After extracted the value from the method, I used the dot product select the training data.
+I chose to use PCA as I found it to be better then using divergence for more simpler and effective solution.
+
+## Square Classifier (Max 200 Words)
+
+To classify my data, I chose to use k-nearest neighbour. To do this I:
+1, Selected the k to use with the most optimal solutions.
+2, Selected the desired features to use fromthe training and testing data.
+3, Calculated the Euclidean distance from the tested data to the other points.
+4, Select the most likely lable using a count system.
+I chose to use k-nearest neighbour as it provided me the best result over gaussian and others. I also decided to implement Euclidean distance instead of Cosine distance as it proved more efficient with noisy data.
+
+## Full-board Classification (Max 200 Words)
+
+I wan planning to implement A full classification where I would check if there were illegal pieces and if so re-check them so that it would not be the case.
+To do this I wanted to check for more than 1 king or having unpromoted pawns on the back rown.
+Unfortunately, I was not able to complete this but I will leave the implemetation I was to use to do this(commented out).
+
+## Performance
+
+My percentage correctness scores (to 1 decimal place) for the development data are as follows.
+
+High quality data:
+
+- Percentage Squares Correct: 98.5%
+- Percentage Boards Correct: 98.5%
+
+Noisy data:
+
+- Percentage Squares Correct: 93.8%
+- Percentage Boards Correct: 93.8%
+
+## Other information (Optional, Max 100 words)
+
+[Optional: highlight any significant aspects of your system that are NOT covered in the
+sections above]
